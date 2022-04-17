@@ -13,5 +13,5 @@
 - Access to list of reservations for specific phone number ```curl -X GET http://localhost:8080/rest/reservations/phone/{phone}```
 - Create reservation for given court, game type, phone number and customer name. System return the cost of the reservation ```curl -X POST -i -H "Content-Type: application/json" --data '{"start":"{date}","end":"{date}","gameType":"SINGLE", "courtId":"{id}", "name":"{name}", "phone":"{phone}"}' http://localhost:8080/rest/reservations/create```
 
-Where {date} is of "yyyy-dd-mm hh:mm", {id} is the id of court, {name} name of the customer, {phone} phone number of the customer
+Where {date} is of "yyyy-MM-dd HH:mm", {id} is the id of court, {name} name of the customer, {phone} phone number of the customer
 
